@@ -35,26 +35,26 @@ function BSEuropeanPutOptionPricing(𝖲₀::Union{Float64,Int}, K::Union{Float6
     end
 end
 
-function MonteCarloAmericanCallOptionPricing(𝖲₀::Union{Float64,Int}, K::Union{Float64,Int}, μ::Union{Float64,Int}, σ::Union{Float64,Int}; N::Int=10000, S::Int=10000)
+function MonteCarloAmericanCallOptionPricing(𝖲₀::Union{Float64,Int}, K::Union{Float64,Int}, μ::Union{Float64,Int}, r::Union{Float64, Int}, σ::Union{Float64,Int}; N::Int=10000, S::Int=10000)
     values = zeros(N)
 
-    for i ∈ values
+    for (i, v) ∈ enumerate(values)
         dW = rand(Normal(0, sqrt(1 / S)), 1, S)
         path = transpose(𝖲₀ .* exp.(cumsum(((μ / S) - ((σ / sqrt(S))^2 / 2)) .+ (σ * dW), dims=2)))
         values[i] = max(last(path) - K, 0)
     end
 
-    return exp(- r * t) * mean(values)
+    return exp(-r) * mean(values)
 end
 
-function MonteCarloAmericanPutOptionPricing(𝖲₀::Union{Float64,Int}, K::Union{Float64,Int}, μ::Union{Float64,Int}, σ::Union{Float64,Int}; N::Int=10000, S::Int=10000)
+function MonteCarloAmericanPutOptionPricing(𝖲₀::Union{Float64,Int}, K::Union{Float64,Int}, μ::Union{Float64,Int},r::Union{Float64, Int}, σ::Union{Float64,Int}; N::Int=10000, S::Int=10000)
     values = zeros(N)
 
-    for i ∈ values
+    for (i, v) ∈ enumerate(values)
         dW = rand(Normal(0, sqrt(1 / S)), 1, S)
         path = transpose(𝖲₀ .* exp.(cumsum(((μ / S) - ((σ / sqrt(S))^2 / 2)) .+ (σ * dW), dims=2)))
         values[i] = max(K - last(path), 0)
     end
 
-    return exp(- r * t) * mean(values)
+    return exp(-r) * mean(values)
 end

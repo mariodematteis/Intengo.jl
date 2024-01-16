@@ -1,6 +1,13 @@
 module Intengo
 
-export LogNormalStockPrices, 𝖽₁, 𝖽₂, BSEuropeanCallOptionPricing, BSEuropeanPutOptionPricing, MonteCarloAmericanCallOptionPricing, MonteCarloAmericanPutOptionPricing, Δ, Θ, Γ, ν, ρ
+export 
+    LogNormalStockPrices,
+    BSEuropeanCallOptionPricing,
+    BSEuropeanPutOptionPricing,
+    MonteCarloAmericanCallOptionPricing,
+    MonteCarloAmericanPutOptionPricing,
+    𝖽₁, 𝖽₂,
+    Δ, Θ, Γ, ν, ρ
 
 include("Hedging/Options.jl")
 include("Simulation/Simulation.jl")
