@@ -10,15 +10,39 @@ __Intengo.jl__ is a _Julia Package_ aimed to offer a unique solution to _financi
 <br>
 Currently, it is designed to offer 
 
-- __Markets__
-    - _Simulation_
-- __Financial Derivatives__
-    - __Futures and Forwards__
-        - _Pricing_
-        - _Hedging_
-    - __Swaps__
-        - _Pricing_
-        - _Hedging_
-    - __Options__
-        - _Pricing_
-        - _Hedging_
+- [__Markets__](#markets)
+    - [_Simulation_](#simulation)
+- [__Financial Derivatives__](#financial-derivatives)
+    - [__Futures and Forwards__](#futures-and-forwards)
+        - [_Pricing_](#pricing)
+        - [_Hedging_](#hedging)
+    - [__Swaps__](#swaps)
+        - [_Pricing_](#pricing-1)
+        - [_Hedging_](#hedging-1)
+    - [__Options__](#options)
+        - [_Pricing_](#pricing-2)
+        - [_Hedging_](#hedging-2)
+
+### Markets
+
+#### Simulation
+
+### Financial Derivatives
+
+#### Futures and Forwards
+
+##### Pricing
+
+##### Hedging
+
+#### Swaps
+
+##### Pricing
+
+##### Hedging
+
+#### Options
+
+##### Pricing
+
+##### Hedging
