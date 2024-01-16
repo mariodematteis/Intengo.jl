@@ -31,18 +31,18 @@ Currently, it is designed to offer
 
 #### Futures and Forwards
 
-##### Pricing
+##### Pricing
 
 ##### Hedging
 
 #### Swaps
 
-##### Pricing
+##### Pricing
 
 ##### Hedging
 
 #### Options
 
-##### Pricing
+##### Pricing
 
 ##### Hedging
