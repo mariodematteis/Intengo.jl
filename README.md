@@ -7,8 +7,6 @@
 [![Coverage](https://coveralls.io/repos/github/BopaxDev/Intengo.jl/badge.svg?branch=main)](https://coveralls.io/github/BopaxDev/Intengo.jl?branch=main)
 
 __Intengo.jl__ is a _Julia Package_ aimed to offer a unique solution to _financial_ related problems.
-<br>
-Currently, it is designed to offer 
 
 - [__Markets__](#markets)
     - [_Simulation_](#simulation)
