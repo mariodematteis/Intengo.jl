@@ -11,7 +11,6 @@
 
 __Intengo.jl__ is a _Julia Package_ aimed to offer a unique solution to _financial_ related problems.
 
-
 - [__Markets__](#markets)
     - [_Simulation_](#simulation)
 - [__Financial Derivatives__](#financial-derivatives)
