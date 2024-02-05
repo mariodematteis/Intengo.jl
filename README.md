@@ -6,9 +6,11 @@
 [![Coverage](https://codecov.io/gh/BopaxDev/Intengo.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/BopaxDev/Intengo.jl)
 [![Coverage](https://coveralls.io/repos/github/BopaxDev/Intengo.jl/badge.svg?branch=main)](https://coveralls.io/github/BopaxDev/Intengo.jl?branch=main)
 
+> [!NOTE]
+> Project under development
+
 __Intengo.jl__ is a _Julia Package_ aimed to offer a unique solution to _financial_ related problems.
-<br>
-Currently, it is designed to offer 
+
 
 - [__Markets__](#markets)
     - [_Simulation_](#simulation)
